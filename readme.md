@@ -8,6 +8,8 @@ Note: This is a work-in-progress repository that will be updated upon the accept
 
 FednnU-Net enables training [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) models in a decentralized, privacy-preserving manner, while maintaining the full compatibility with the original framework.
 
+Check the pre-print here: [Federated nnU-Net for Privacy-Preserving Medical Image Segmentation](https://arxiv.org/abs/2503.02549)
+
 ## Installation
 
 Clone and install FednnU-Net on all computational nodes that are part of the federated training (including the coordinating server)
@@ -118,6 +120,20 @@ This will run the AsymFedAvg federated training for `2d` configuration model and
 Each federated training node saves it's checkpoints and final model following the default nnU-Net behaviour. To evaluate the trained model on the local data, use the native commands provided in nnU-Net's [documentation](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/how_to_use_nnunet.md):
 ```bash
 nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c CONFIGURATION --save_probabilities
+```
+
+## Citation
+Please cite the following paper when using FednnU-Net:
+```
+@misc{skorupko2025federatednnunetprivacypreservingmedical,
+      title={Federated nnU-Net for Privacy-Preserving Medical Image Segmentation}, 
+      author={Grzegorz Skorupko and Fotios Avgoustidis and Carlos Martín-Isla and Lidia Garrucho and Dimitri A. Kessler and Esmeralda Ruiz Pujadas and Oliver Díaz and Maciej Bobowicz and Katarzyna Gwoździewicz and Xavier Bargalló and Paulius Jaruševičius and Kaisar Kushibar and Karim Lekadir},
+      year={2025},
+      eprint={2503.02549},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.02549}, 
+}
 ```
 
 
