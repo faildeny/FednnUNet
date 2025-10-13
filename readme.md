@@ -1,14 +1,27 @@
 # FednnU-Net
 
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Paper](https://img.shields.io/badge/arXiv-2503.02549-b31b1b.svg)](https://arxiv.org/abs/2503.02549)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![nnU-Net Compatible](https://img.shields.io/badge/Compatible-nnU--Net-brightgreen.svg)](https://github.com/MIC-DKFZ/nnUNet)
+[![Federated Dataset](https://img.shields.io/badge/Dataset-Multi--Hospital-blueviolet.svg)](#)
+[![Contributions welcome](https://img.shields.io/badge/Contributions-welcome-brightgreen.svg)](#)
+[![Made with ❤️ for Research](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20for%20Research-red.svg)](#)
 
-Note: This is a work-in-progress repository that will be updated upon the acceptance of the submitted work.
+> 🧩 *A federated extension of nnU-Net for privacy-preserving medical image segmentation.*
+
+> Note: This is a work-in-progress repository that will be updated upon the acceptance of the submitted work.
 
 ![image](assets/fednnunet_asymfedavg.png)
 
 
-FednnU-Net enables training [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) models in a decentralized, privacy-preserving manner, while maintaining the full compatibility with the original framework.
+**FednnU-Net** enables training [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) models in a **decentralized**, **privacy-preserving** manner — while maintaining full compatibility with the original framework.
 
-Check the pre-print here: [Federated nnU-Net for Privacy-Preserving Medical Image Segmentation](https://arxiv.org/abs/2503.02549)
+📄 **Preprint:** [*Federated nnU-Net for Privacy-Preserving Medical Image Segmentation*](https://arxiv.org/abs/2503.02549)
+
+---
+
 
 **🩻 Modalities Evaluated:**
 
@@ -22,16 +35,16 @@ Check the pre-print here: [Federated nnU-Net for Privacy-Preserving Medical Imag
 * 📈 Achieves **performance comparable to or surpassing centralized training**.
 * 🧩 Demonstrates strong **scalability and real-world applicability** in federated medical imaging.
 
-### 🧪 **Segmentation Performance**
+### 🧪 **Image Segmentation Performance**
 
-**Federated nnU-Net** was extensively tested on **real-world, multi-hospital datasets**, ensuring a realistic federated learning setup.
+**Federated nnU-Net** was tested on **real-world, multi-hospital datasets**, ensuring a realistic federated learning setup.
 
 ![image](assets/qualitative.png)
 
 👉 See the **[Extended Results Table](#-extended-results)** for detailed tables.
 
 
-## Installation
+## ⚙️ **Installation**
 
 Clone and install FednnU-Net on all computational nodes that are part of the federated training (including the coordinating server)
 
@@ -45,12 +58,13 @@ Then run the installation script that will clone the original nnUNet as a submod
 bash ./install.sh
 ```
 
-If you see: `Installation complete. You can now use fednnUNet.` then the installation was completed succesfully.
-
+✅ If you see:
+`Installation complete. You can now use fednnUNet.`
+then installation was successful.
 
 ## Training
 
-#### Distributed node setup
+### 🌍 Distributed Node Setup
 
 
 Start server
@@ -65,17 +79,17 @@ Start each node
 python fednnunet/client.py command dataset_id configuration fold --port network_port
 ```
 
-#### Start server and clients automatically (one machine setup)
+#### 💻 Start server and clients automatically (one machine setup)
 
 For prototyping and simulation purposes, it is possible to start all nodes on the same machine. The dataset ids for each data-center can be provided as list in the following string form "dataset_id_1 dataset_id_2 dataset_id_3". 
 ```bash
 python fednnunet/run.py train "dataset_id_1 dataset_id_2 dataset_id_3" configuration fold --port 8080
 ```
 
-#### Dataset preparation
+### 🗂️ Dataset Preparation
 Prepare local dataset on each node in a [format](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/dataset_format.md) required by nnU-Net.
 
-#### Experiment preparation
+### 🧪 Experiment Preparation
 To run a complete configuration and training follow the steps of the original nnU-Net pipeline.
 First, configure the experiment and preprocess the data by running ```plan_and_preprocess``` as the command for server and nodes.
 After the experiment is prepared, you can start distributed training with ```train``` command.
@@ -96,7 +110,7 @@ To run training with 5 nodes on one machine for 3d_fullres configuration and all
 ```bash
 python fednnunet/run.py train "301 302 303 304 305" 3d_fullres all --port 8080
 ```
-#### Training modes
+### 🔀 Training Modes
 Following the FednnU-Net paper, it is possible to train the model in two ways: Federated Fingerprint Extraction (FFE) and Asymetric Federated Averaging (AsymFedAvg). While both methods works well in different scenarios, it is best to use the FFE method as the starting point as it's more robust and gives results very close to models trained in a centralized way.
 
 ##### FFE
@@ -148,10 +162,10 @@ nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c CONFI
 ![image](assets/table.png)
 
 
-## Citation
+## 🧾 **Citation**
 Please cite the following paper when using FednnU-Net:
-```
-@misc{skorupko2025federatednnunetprivacypreservingmedical,
+```bibtex
+@misc{fednnunet2025,
       title={Federated nnU-Net for Privacy-Preserving Medical Image Segmentation}, 
       author={Grzegorz Skorupko and Fotios Avgoustidis and Carlos Martín-Isla and Lidia Garrucho and Dimitri A. Kessler and Esmeralda Ruiz Pujadas and Oliver Díaz and Maciej Bobowicz and Katarzyna Gwoździewicz and Xavier Bargalló and Paulius Jaruševičius and Kaisar Kushibar and Karim Lekadir},
       year={2025},
@@ -161,5 +175,14 @@ Please cite the following paper when using FednnU-Net:
       url={https://arxiv.org/abs/2503.02549}, 
 }
 ```
+
+## Funding
+FednnU-Net is developed by the [Barcelona Artificial Intelligence in Medicine Lab (BCN-AIM)](https://www.bcn-aim.org/) at [Universitat de Barcelona](https://web.ub.edu/)
+<img src="assets/bcn_aim_logo.png" width="150"> <img src="assets/ub_logo.png" width="150">
+
+This work received funding from the European Union’s Horizon Europe research and innovation programme under Grant Agreement No. 101057849 (DataTools4Heart). This work has been supported by the European Union’s research and innovation programmes: Horizon Europe under Grant Agreement No. 101057699 (RadioVal) and Grant Agreement No. 101044779 (AIMIX), Horizon 2020 under Grant Agreement No. 952103 (EuCanImage).
+
+
+<img src="assets/dt4h_logo.png" width="80"> <img src="assets/aimix_logo.png" width="130"> <img src="assets/radioval_logo.jpeg" width="200"> 
 
 
