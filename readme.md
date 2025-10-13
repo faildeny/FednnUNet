@@ -178,11 +178,13 @@ Please cite the following paper when using FednnU-Net:
 
 ## Funding
 FednnU-Net is developed by the [Barcelona Artificial Intelligence in Medicine Lab (BCN-AIM)](https://www.bcn-aim.org/) at [Universitat de Barcelona](https://web.ub.edu/)
-<img src="assets/bcn_aim_logo.png" width="150"> <img src="assets/ub_logo.png" width="150">
+
+
+<img src="assets/bcn_aim_logo.png" width="250">   <img src="assets/ub_logo.png" width="250">
 
 This work received funding from the European Union’s Horizon Europe research and innovation programme under Grant Agreement No. 101057849 (DataTools4Heart). This work has been supported by the European Union’s research and innovation programmes: Horizon Europe under Grant Agreement No. 101057699 (RadioVal) and Grant Agreement No. 101044779 (AIMIX), Horizon 2020 under Grant Agreement No. 952103 (EuCanImage).
 
 
-<img src="assets/dt4h_logo.png" width="80"> <img src="assets/aimix_logo.png" width="130"> <img src="assets/radioval_logo.jpeg" width="200"> 
+<img src="assets/dt4h_logo.png" width="120">  <img src="assets/radioval_logo.jpeg" width="250"> <img src="assets/aimix_logo.png" width="160">    <img src="assets/eucanimage_logo.jpeg" width="160">
 
 
