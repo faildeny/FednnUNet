@@ -10,6 +10,27 @@ FednnU-Net enables training [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) models
 
 Check the pre-print here: [Federated nnU-Net for Privacy-Preserving Medical Image Segmentation](https://arxiv.org/abs/2503.02549)
 
+**🩻 Modalities Evaluated:**
+
+* 🩷 **Breast MRI**
+* ❤️ **Cardiac MRI**
+* 🤰 **Fetal Ultrasound**
+
+**🚀 Key Findings:**
+
+* ⚙️ **Adaptive aggregation** enables robust cross-site learning.
+* 📈 Achieves **performance comparable to or surpassing centralized training**.
+* 🧩 Demonstrates strong **scalability and real-world applicability** in federated medical imaging.
+
+### 🧪 **Segmentation Performance**
+
+**Federated nnU-Net** was extensively tested on **real-world, multi-hospital datasets**, ensuring a realistic federated learning setup.
+
+![image](assets/qualitative.png)
+
+👉 See the **[Extended Results Table](#-extended-results)** for detailed tables.
+
+
 ## Installation
 
 Clone and install FednnU-Net on all computational nodes that are part of the federated training (including the coordinating server)
@@ -121,6 +142,11 @@ Each federated training node saves it's checkpoints and final model following th
 ```bash
 nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c CONFIGURATION --save_probabilities
 ```
+
+## 📊 Extended Results
+
+![image](assets/table.png)
+
 
 ## Citation
 Please cite the following paper when using FednnU-Net:
