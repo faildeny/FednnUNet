@@ -39,7 +39,7 @@
 
 ![image](assets/qualitative.png)
 
-👉 See the **[Extended Results Table](#-extended-results)** for detailed tables.
+👉 See the **[Extended Results Table](#-extended-results)** for full performance metrics.
 
 
 ## ⚙️ **Installation**
@@ -162,17 +162,19 @@ nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c CONFI
 
 ## 🧾 **Citation**
 Please cite the following paper when using FednnU-Net:
-> [*Skorupko, G., Avgoustidis, F., Martín-Isla, C., Garrucho, L., Kessler, D. A., Pujadas, E. R., ... & Lekadir, K. (2025). Federated nnU-Net for Privacy-Preserving Medical Image Segmentation. arXiv preprint arXiv:2503.02549.*](https://arxiv.org/abs/2503.02549)
+> [*Skorupko, G., Avgoustidis, F., Martín-Isla, C., Garrucho, L., Kessler, D. A., Pujadas, E. R., ... & Lekadir, K. (2025). Federated nnU-Net for Privacy-Preserving Medical Image Segmentation. Scientific Reports. 2025 Nov 3;15(1):38312*](https://www.nature.com/articles/s41598-025-22239-0)
+
 
 ```bibtex
-@misc{fednnunet2025,
-      title={Federated nnU-Net for Privacy-Preserving Medical Image Segmentation}, 
-      author={Grzegorz Skorupko and Fotios Avgoustidis and Carlos Martín-Isla and Lidia Garrucho and Dimitri A. Kessler and Esmeralda Ruiz Pujadas and Oliver Díaz and Maciej Bobowicz and Katarzyna Gwoździewicz and Xavier Bargalló and Paulius Jaruševičius and Kaisar Kushibar and Karim Lekadir},
-      year={2025},
-      eprint={2503.02549},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.02549}, 
+@article{skorupko2025federated,
+  title={Federated nnU-Net for privacy-preserving medical image segmentation},
+  author={Skorupko, Grzegorz and Avgoustidis, Fotios and Mart{\'\i}n-Isla, Carlos and Garrucho, Lidia and Kessler, Dimitri A and Pujadas, Esmeralda Ruiz and D{\'\i}az, Oliver and Bobowicz, Maciej and Gwo{\'z}dziewicz, Katarzyna and Bargall{\'o}, Xavier and others},
+  journal={Scientific Reports},
+  volume={15},
+  number={1},
+  pages={38312},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
