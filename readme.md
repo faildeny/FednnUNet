@@ -16,7 +16,7 @@
 
 **FednnU-Net** enables training [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) models in a **decentralized**, **privacy-preserving** manner — while maintaining full compatibility with the original framework.
 
-📄 **Published Paper:** [*Skorupko, G., Avgoustidis, F., Martín-Isla, C., Garrucho, L., Kessler, D. A., Pujadas, E. R., ... & Lekadir, K. (2025). Federated nnU-Net for Privacy-Preserving Medical Image Segmentation. arXiv preprint arXiv:2503.02549.*](https://www.nature.com/articles/s41598-025-22239-0)
+📄 **Published Paper:** [*Skorupko, G., Avgoustidis, F., Martín-Isla, C., Garrucho, L., Kessler, D. A., Pujadas, E. R., ... & Lekadir, K. (2025). Federated nnU-Net for Privacy-Preserving Medical Image Segmentation. Scientific Reports. 2025 Nov 3;15(1):38312*](https://www.nature.com/articles/s41598-025-22239-0)
 
 ---
 
