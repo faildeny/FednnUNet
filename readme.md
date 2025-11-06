@@ -11,8 +11,6 @@
 
 > 🧩 *A federated extension of nnU-Net for privacy-preserving medical image segmentation.*
 
-> Note: This is a work-in-progress repository that will be updated upon the acceptance of the submitted work.
-
 ![image](assets/fednnunet_asymfedavg.png)
 
 
