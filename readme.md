@@ -50,15 +50,35 @@ Clone and install FednnU-Net on all computational nodes that are part of the fed
 git clone https://github.com/faildeny/FednnUNet
 ```
 
-Then run the installation script that will clone the original nnUNet as a submodule and then will install both libraries
+Then run one of the installation scripts. Both clone the original nnUNet as a submodule (if missing) and install both libraries.
 
+- `install.sh` installs into the currently active Python environment (pip):
+
+  ```bash
+  bash ./install.sh
+  ```
+
+- `install_conda.sh` creates (or reuses) a conda environment and installs into it:
+
+  ```bash
+  bash ./install_conda.sh [env_name] [python_version] [cuda_version|cpu]   # defaults: fednnunet 3.10 12.1
+  ```
+
+✅ After successfull installation, you should see:
 ```bash
-bash ./install.sh
+ _____             _                  _   _  _   _         _
+|  ___|  ___    __| | _ __    _ __   | | | || \ | |  ___  | |_
+| |_    / _ \  / _` || '_ \  | '_ \  | | | ||  \| | / _ \ | __|
+|  _|  |  __/ | (_| || | | | | | | | | |_| || |\  ||  __/ | |_
+|_|     \___|  \__,_||_| |_| |_| |_|  \___/ |_| \_| \___|  \__|
+  
+  Installation complete!
+
+  How to use FednnUNet:      see readme.md
+
+  Activate the environment:  conda activate fednnunet
 ```
 
-✅ If you see:
-`Installation complete. You can now use fednnUNet.`
-then installation was successful.
 
 ## Training
 
