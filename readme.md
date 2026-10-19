@@ -1,5 +1,6 @@
 # FednnU-Net
 
+[![Build](https://github.com/faildeny/FednnUNet/actions/workflows/build.yml/badge.svg)](https://github.com/faildeny/FednnUNet/actions/workflows/build.yml)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/arXiv-2503.02549-b31b1b.svg)](https://arxiv.org/abs/2503.02549)
@@ -65,12 +66,12 @@ Then run one of the installation scripts. Both clone the original nnUNet as a su
   ```
 
 ✅ After successfull installation, you should see:
-```bash
- _____             _                  _   _  _   _         _
-|  ___|  ___    __| | _ __    _ __   | | | || \ | |  ___  | |_
-| |_    / _ \  / _` || '_ \  | '_ \  | | | ||  \| | / _ \ | __|
-|  _|  |  __/ | (_| || | | | | | | | | |_| || |\  ||  __/ | |_
-|_|     \___|  \__,_||_| |_| |_| |_|  \___/ |_| \_| \___|  \__|
+```diff
++ _____             _                  _   _  _   _         _
++|  ___|  ___    __| | _ __    _ __   | | | || \ | |  ___  | |_
++| |_    / _ \  / _` || '_ \  | '_ \  | | | ||  \| | / _ \ | __|
++|  _|  |  __/ | (_| || | | | | | | | | |_| || |\  ||  __/ | |_
++|_|     \___|  \__,_||_| |_| |_| |_|  \___/ |_| \_| \___|  \__|
   
   Installation complete!
 
